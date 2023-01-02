@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/1767/1767833.svg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% block title %}
+    <title>Casa Criativa</title>
+    {% endblock title %}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheet.css">
+
+</head>
+<body class="{{ bodyClass }}">
+    <div id="container" class="container-home">    
+        
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+
+    {% include "modal.html" %}
+
+    <script src="/javascript.js"></script>
+</body>
+</html>
